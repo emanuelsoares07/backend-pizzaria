@@ -12,7 +12,7 @@ class CreateUserService{
 
     // verificar se ele enviou um email
     if(!email){
-      throw new Error("Email incorrect")
+      throw new Error("Email incorreto")
     }
 
     //Verificar se esse email já está cadastrado na plataforma

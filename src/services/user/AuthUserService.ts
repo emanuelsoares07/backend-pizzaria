@@ -29,8 +29,7 @@ class AuthUserService{
       throw new Error("User/password incorrect")
     }
 
-
-    // Se deu tudo certo vamos gerar o token pro usuario.
+    // Se deu tudo certo vamos gerar o token JWT pro usuario.
     const token = sign(
       {
         name: user.name,
