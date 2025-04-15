@@ -40,12 +40,10 @@ router.get('/me', isAuthenticated,  new DetailuserController().handle )
 
 //-- ROTAS CATEGORY
 router.post('/category', isAuthenticated, new CreateCategoryController().handle )
-
 router.get('/category', isAuthenticated, new ListCategoryController().handle )
 
 //-- ROTAS PRODUCT
-router.post('/product', isAuthenticated, upload.single('file'), new CreateProductController().handle )
-
+router.post('/product', isAuthenticated, new CreateProductController().handle )
 router.get('/category/product', isAuthenticated, new ListByCategoryController().handle )
 
 //-- ROTAS ORDER
